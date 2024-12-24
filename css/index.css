@@ -286,13 +286,14 @@ nav {
 }
 
 .about_right_content>h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 50px;
 }
 
 .about_right_content>p {
     font-size: 1.3rem;
-    line-height: 1.5em
+    line-height: 2em;
+    font-weight: 500;
 }
 
 .about_keyword {
@@ -317,7 +318,7 @@ nav {
 
 .keyword2 {
     font-size: 1.5em;
-    top: 0;
+    top: 10%;
     left: 5%;
     /* 무빙 애니메이션 추가 */
     animation: aboutKeyword 2s infinite;
@@ -475,7 +476,7 @@ nav {
 }
 
 .align_center {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .card.flipped {
@@ -560,6 +561,29 @@ p {
 }
 
 /* 탭메뉴 컨텐츠 */
+#drag_icon {
+    width: 2rem;
+    height: 4.5rem;
+    background-image: url('../image/drag-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 5rem; right: 16rem;
+    /* background-color: red; */
+    z-index: 100;
+    animation: dragmotion 1.5s ease-in-out infinite;
+    transform: translateY(0);
+}
+
+@keyframes dragmotion {
+    0%,100% {   transform: translateY(0);
+    }
+    50% {    transform: translateY(1rem);
+    }
+}
+
+
 #portfolio_tap_menu>ul>li.tap_active .portfolio_tap_content {
     width: 100%;
     height: 100%;
@@ -619,17 +643,16 @@ p {
     overflow: hidden;
     position: relative;
     border-radius: 1rem;
-    /* border: 4px solid blue; */
+    border: 1px solid #fff;
 }
 
 /* 사이트 화면 */
 #site_img {
     width: 100%;
     overflow: hidden;
-    /* border: 4px solid red; */
 }
 
-.site_img {
+.site_img1,.site_img2,.site_img3 {
     width: 100%;
     height: 100%;
     transition: transform 1s ease-out;
@@ -641,8 +664,16 @@ p {
     opacity: 1;
 }
 
-#web_img_wrap:hover .site_img {
-    transform: translateY(-70em);
+#web_img_wrap:hover .site_img1 {
+    transform: translateY(-55em);
+}
+
+#web_img_wrap:hover .site_img2 {
+    transform: translateY(-65em);
+}
+
+#web_img_wrap:hover .site_img3 {
+    transform: translateY(-115em);
 }
 
 /* 버튼 화면 */
@@ -663,7 +694,8 @@ p {
 
 
 #web_btn1,
-#web_btn2 {
+#web_btn2,
+#web_btn3 {
     padding: 0.5em 1.5em;
     background-color: seagreen;
     color: white;
@@ -673,7 +705,8 @@ p {
 }
 
 #web_btn1:hover,
-#web_btn2:hover {
+#web_btn2:hover,
+#web_btn3:hover {
     font-weight: 800;
 }
 
@@ -693,16 +726,16 @@ p {
 
 /* 텍스트 개별 스타일 */
 .web_text_wrap h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1.2em;
     margin-bottom: 1.5vw;
     font-weight: 600;
 }
 
 .sub_text1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 3vw;
-    line-height: 1.2em
+    line-height: 1.7em
 }
 
 .sub_text2 {
