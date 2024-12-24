@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>Document</title>
+    <!-- <link rel="icon" href="image/favicon-32x32.png" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Batang&family=Kirang+Haerang&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Link Swiper's, jquery's JS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.js" defer></script>
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <!-- ~~~~~~~~~~~~~~~~~~ start ~~~~~~~~~~~~~~~~~~ -->
+    <div id="container">
+        <!-- =============== <header> =============== -->
+        <header>
+            <section id="header">
+                <div id="logo" class="logo">leeyujeong</div>
+                <nav>
+                    <ul id="nav_menu">
+                        <li><a href="#about_container" class="hover-effect">About</a></li>
+                        <li><a href="#skill_container" class="hover-effect">Skill</a></li>
+                        <li><a href="#portfolio_container" class="hover-effect">Project</a></li>
+                        <li><a href="#contact_container" class="hover-effect">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <!-- =============== <main> =============== -->
+        <main>
+            <!-- ============= 1.cover ============= -->
+            <section id="cover_container">
+                <div id="cover_wrap">
+                    <div id="cover_title">
+                        <div class="cover_title1">WEB</div>
+                        <div class="cover_title2">PUBLISHING</div>
+                        <div class="cover_title3"><span class="letterspace1">(</span>EDIT <span class="letterspace2">)</span>DESIGN</div>
+                    </div>
+                    <div id="cover_memo">
+                        <img src="./image/cover_meno.png" alt="">
+                    </div>
+                    <div class="cover_title4">PORTFOLIO</div>
+                </div>
+            </section>
+            <!-- ============= 2.about ============= -->
+            <section id="about_container">
+                <div id="container_title" class="about_title">ABOUT</div>
+                <div id="about_wrap">
+                    <div class="about_left_content">
+                        <div class="me"></div>
+                        <span class="about_keyword keyword1">#소통</span>
+                        <span class="about_keyword keyword2">#성실한</span>
+                        <span class="about_keyword keyword3">#유연한</span>
+                    </div>
+                    <div class="about_right_content">
+                        <h1>생각하고 탐구하는, <br> 웹퍼블리셔 이유정입니다.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nemo quia, iste quisquam esse
+                            nesciunt aliquam? Quidem, nisi, quas error, dignissimos fuga quisquam nostrum alias
+                            voluptate nobis laboriosam ipsum eligendi.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ============= 3.skill ============= -->
+            <section id="skill_container">
+                <div id="container_title" class="skill_title">SKILL</div>
+                <div id="skill_wrap">
+                    <div class="card_left_wrap">
+                        <!-- 카드1 -->
+                        <div class="card" id="card1">
+                            <div class="card-front">
+                                <h2>Web publishing</h2>
+                                <div id="skill_icon" class="filter card1_icon">
+                                    <img src="./image/skill-icon-html.png" alt="icon-html">
+                                    <img src="./image/skill-icon-css.png" alt="icon-css">
+                                    <img src="./image/skill-icon-js.png" alt="icon-js">
+                                    <img src="./image/skill-icon-jquery.png" alt="icon-jquery">
+                                    <img src="./image/skill-icon-react.png" alt="icon-react">
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="align_center">
+                                    <h3>HTML</h3>
+                                    <p>시멘틱태그와 주석활용으로 구조를 직관적, 체계적으로 관리하여 효율성을 높일 수 있도록 합니다.</p>
+                                    <h3>CSS</h3>
+                                    <p>디자인 요소와 레이아웃 구조를 제어하여 웹사이트의 형태를 제작할 수 있습니다.</p>
+                                    <h3>Javascript, Jquery</h3>
+                                    <p>편의성과 다양한 사용자경험을 고려한 동적인 기능을 활용할 수 있습니다.</p>
+                                    <h3>React</h3>
+                                    <p>효율적이고 일관적인 컴포넌트 작업을 위한 퍼블리싱을 공부하고 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 카드1 끝 -->
+                    </div>
+
+                    <div class="card_right_wrap">
+                        <div class="card2_wrap">
+                            <!-- 카드2 -->
+                            <div class="card" id="card2">
+                                <div class="card-front">
+                                    <h2>design</h2>
+                                    <div id="skill_icon" class="filter">
+                                        <img src="./image/skill-icon-figma.png" alt="icon-figma">
+                                        <img src="./image/skill-icon-ps.png" alt="icon-ps">
+                                        <img src="./image/skill-icon-ai.png" alt="icon-ai">
+                                        <img src="./image/skill-icon-id.png" alt="icon-id">
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="align_center">
+                                        <h3>Figma</h3>
+                                        <p>피그마를 활용한 웹디자인 프로토타입 제작가능</p>
+                                        <h3>Photoshop/Illustrator</h3>
+                                        <p>포토샵/일러스트레이터를 활용한 디자인 및 편집, 웹성능을 고려한 웹 이미지 작업을 지향합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 카드2 끝 -->
+                        </div>
+
+
+                        <div class="card3_wrap">
+                            <!-- 카드3 -->
+                            <div class="card" id="card3">
+                                <div class="card-front">
+                                    <h2>tool</h2>
+                                    <div id="skill_icon" class="filter">
+                                        <img src="./image/skill-icon-github.png" alt="icon-github">
+                                        <img src="./image/skill-icon-teams.png" alt="icon-teams">
+                                        <img src="./image/skill-icon-conf.png" alt="icon-conf">
+                                        <img src="./image/skill-icon-zira.png" alt="icon-zira">
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <div class="align_center">
+                                        <h3>Jira, Confluence, Teams, Github</h3>
+                                        <p>협업툴을 활용한 업무공유, 스케줄관리, 커뮤니케이션이 가능합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 카드3 끝 -->
+                        </div>
+                        <div>
+                        </div>
+            </section>
+            <!-- ============= 4.portfolio ============= -->
+            <section id="portfolio_container">
+                <div id="container_title" class="portfolio_title">PORTFOLIO</div>
+                <div id="portfolio_wrap">
+                    <div id="portfolio_tap_menu">
+                        <ul>
+                            <li class="tap_active">
+                                <a href="#">WEB</a>
+                                <div class="portfolio_tap_content">
+                                    <!-- Swiper -->
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <!-- 프로젝트1 -->
+                                                <div class="web" id="web1">
+                                                    <div id="web_img_wrap">
+                                                        <div id="site_img">
+                                                            <img src="./image/web-site2.jpg" alt="" class="site_img">
+                                                        </div>
+                                                        <div id="web_btn">
+                                                            <div id="web_btn1">상세보기</div>
+                                                            <div id="web_btn2">사이트가기</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="web_text_wrap">
+                                                        <div>
+                                                            <h3>프로젝트<br>홈페이지 리뉴얼1</h3>
+                                                            <p class="sub_text1">Lorem ipsum dolor sit amet consectetur
+                                                                adipisicing
+                                                                elit. Nisi, repudiandae voluptas alias nostrum eveniet
+                                                                eos
+                                                                similique
+                                                                corrupti ex!</p>
+                                                        </div>
+                                                        <p class="sub_text2">인원: 1명 | 기여도: 디자인 100%, 코딩 100% | 작업기간: 3주
+                                                            <br>
+                                                            스택:
+                                                            html, css, javascript, jquery
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- 프로젝트1 끝 -->
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <!-- 프로젝트2 -->
+                                                <div class="web" id="web1">
+                                                    <div id="web_img_wrap">
+                                                        <div id="site_img">
+                                                            <img src="./image/web-site2.jpg" alt="" class="site_img">
+                                                        </div>
+                                                        <div id="web_btn">
+                                                            <div id="web_btn1">상세보기</div>
+                                                            <div id="web_btn2">사이트가기</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="web_text_wrap">
+                                                        <div>
+                                                            <h3>프로젝트<br>홈페이지 리뉴얼2</h3>
+                                                            <p class="sub_text1">Lorem ipsum dolor sit amet consectetur
+                                                                adipisicing
+                                                                elit. Nisi, repudiandae voluptas alias nostrum eveniet
+                                                                eos
+                                                                similique
+                                                                corrupti ex!</p>
+                                                        </div>
+                                                        <p class="sub_text2">인원: 1명 | 기여도: 디자인 100%, 코딩 100% | 작업기간: 3주
+                                                            <br>
+                                                            스택:
+                                                            html, css, javascript, jquery
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- 프로젝트2 끝 -->
+
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <!-- 프로젝트3-->
+                                                <div class="web" id="web1">
+                                                    <div id="web_img_wrap">
+                                                        <div id="site_img">
+                                                            <img src="./image/web-site2.jpg" alt="" class="site_img">
+                                                        </div>
+                                                        <div id="web_btn">
+                                                            <div id="web_btn1">상세보기</div>
+                                                            <div id="web_btn2">사이트가기</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="web_text_wrap">
+                                                        <div>
+                                                            <h3>프로젝트<br>홈페이지 리뉴얼3</h3>
+                                                            <p class="sub_text1">Lorem ipsum dolor sit amet consectetur
+                                                                adipisicing
+                                                                elit. Nisi, repudiandae voluptas alias nostrum eveniet
+                                                                eos
+                                                                similique
+                                                                corrupti ex!</p>
+                                                        </div>
+                                                        <p class="sub_text2">인원: 1명 | 기여도: 디자인 100%, 코딩 100% | 작업기간: 3주
+                                                            <br>
+                                                            스택:
+                                                            html, css, javascript, jquery
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <!-- 프로젝트3 끝 -->
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">EDIT</a>
+                                <div class="portfolio_tap_content">
+                                    <!-- Swiper -->
+                                    <div class="swiper mySwiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="book" id="book1">
+                                                    <div class="bookCover">comming<br>soon</div>
+                                                    <div class="bookSide"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="book" id="book1">
+                                                    <div class="bookCover">comming<br>soon</div>
+                                                    <div class="bookSide"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="book" id="book1">
+                                                    <div class="bookCover">comming<br>soon</div>
+                                                    <div class="bookSide"></div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="book" id="book1">
+                                                    <div class="bookCover">comming<br>soon</div>
+                                                    <div class="bookSide"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!-- ============= 5.contact ============= -->
+            <section id="contact_container">
+                <!-- <div id="container_title" class="contact_title">CONTACT</div> -->
+                <div id="contact_wrap">
+                    <h1 id="section_title" class="contact_title_h1">
+                        <span class="motion_bounce motion1">C</span>
+                        <span class="motion_bounce motion2">O</span>
+                        <span class="motion_bounce motion3">N</span>
+                        <span class="motion_bounce motion4">T</span>
+                        <span class="motion_bounce motion5">A</span>
+                        <span class="motion_bounce motion6">C</span>
+                        <span class="motion_bounce motion7">T</span>
+                    </h1>
+                    <div id="contact_info">
+                        <div class="contact_name">이유정</div>
+                        <div class="contact_num">010-3356-1519 <br>
+                            yujeong918@naver.com</div>
+                    </div>
+                </div>
+                <div class="contact_flowtext1">
+                    <div class="motion_flow1">
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                    </div>
+                </div>
+
+                <div class="contact_flowtext2">
+                    <div class="motion_flow2">
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                        <p>THANK YOU</p>
+                    </div>
+                </div>
+                <div id="contact_copyright">
+                    portfolio 2025, lee yu jeong
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 프로젝트 상세보기 모달 -->
+    <div id="web_project_modal1" class="project_modal_bg">
+        <div class="project_modal">
+            <div class="scroll">
+                <h1>웹사이트 리뉴얼</h1>
+                <p>제작기획/의도 설명 스크롤로 넣기 </p>
+            </div>
+            <button id="web_modal_close">닫기</button>
+        </div>
+    </div>
+
+    <div id="edit_project_modal1" class="project_modal_bg">
+        <div class="project_modal">
+            <div>
+                <h1>COMMING SOON</h1>
+                <p>준비중입니다</p>
+            </div>
+            <button id="edit_modal_close">닫기</button>
+        </div>
+    </div>
+
+    <!-- 상단이동 -->
+    <a href="#" id="top">TOP</a>
+
+    <!-- ~~~~~~~~~~~~~~~~~~ end ~~~~~~~~~~~~~~~~~~ -->
+
+    <script>
+        // 4.포트폴리오 - 탭메뉴 web - Initialize Swiper1
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // 4.포트폴리오 - 탭메뉴 edit - Initialize Swiper2
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
