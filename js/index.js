@@ -37,7 +37,7 @@ $(function () {
 
         setTimeout(function () {
             $('#cover_memo').css({ transform: 'translateY(0)', opacity: '1' });
-        }, 2700); // Wait 2 seconds before the fourth animation
+        }, 2200); // Wait 2 seconds before the fourth animation
     });
 
 
@@ -85,23 +85,23 @@ $(function () {
 
 
     // 4.포트폴리오 - 개별프로젝트 상세보기 modal
-    $(function () {
-        // web 프로젝트
-        $('#web_btn1').on('click', function () {
-            $('#web_project_modal1').fadeIn();
-            $('#web_modal_close').on('click', function () {
-                $('#web_project_modal1').fadeOut();
-            })
-        })
+//     $(function () {
+//         // web 프로젝트
+//         $('#web_btn1').on('click', function () {
+//             $('#web_project_modal1').fadeIn();
+//             $('#web_modal_close').on('click', function () {
+//                 $('#web_project_modal1').fadeOut();
+//             })
+//         })
 
-        // edit 프로젝트
-        $('#book1').on('click', function () {
-            $('#edit_project_modal1').fadeIn();
-            $('#edit_modal_close').on('click', function () {
-                $('#edit_project_modal1').fadeOut();
-            })
-        })
-    });
+//         // edit 프로젝트
+//         $('#book1').on('click', function () {
+//             $('#edit_project_modal1').fadeIn();
+//             $('#edit_modal_close').on('click', function () {
+//                 $('#edit_project_modal1').fadeOut();
+//             })
+//         })
+//     });
 });
 
 // 3.스킬 - 카드 뒤집기
