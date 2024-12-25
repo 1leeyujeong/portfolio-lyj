@@ -1,0 +1,1107 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#container {
+    width: 100vw;
+    background-image: url('../image/cover_bg.png');
+    background-size: calc(100vw + 40%);
+    background-position: center -4vw;
+    background-repeat: no-repeat;
+}
+
+/* main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ccc;
+} */
+
+/* =============== header =============== */
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#header {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_bg_active {
+    transition: background-color 1s;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.color_white_active {
+    transition: color 1s;
+    color: white;
+}
+
+.logo {
+    width: 30%;
+    font-size: 3vw;
+    font-family: "Rubik Mono One", sans-serif;
+    padding-left: 2%;
+    /* background-color: red; */
+}
+
+nav {
+    width: 50%;
+}
+
+#nav_menu {
+    display: flex;
+    justify-content: end;
+    /* background-color: khaki; */
+}
+
+#nav_menu>li {
+    padding: 3% 3%;
+    /* border: 2px solid black; */
+}
+
+.nav_hover-effect {
+    font-size: 2vw;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    display: block;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+/* nav a 호버 시 애니메이션 추가 */
+.nav_hover-effect:hover {
+    animation: colorChange 1.5s infinite;
+}
+
+.nav-link.active {
+    color: seagreen;
+    font-weight: bold;
+  }
+
+/* 색상 변화 애니메이션 */
+@keyframes colorChange {
+    0% {
+        color: seagreen;
+    }
+
+    25% {
+        color: rosybrown;
+    }
+
+    50% {
+        color: burlywood;
+    }
+
+    100% {
+        color: seagreen;
+    }
+}
+
+
+#container_title {
+    font-weight: 900;
+    font-family: "Rubik Mono One", sans-serif;
+    margin-bottom: 2.5vw;
+}
+
+.about_title,
+.skill_title,
+.portfolio_title {
+    font-size: 7vw;
+    padding-top: 5%;
+    /* 스크롤이벤트 속성 */
+    transition: 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(-0.5em);
+}
+
+#cover_container,
+#about_container,
+#skill_container,
+#portfolio_container,
+#contact_container {
+    width: 100%;
+    margin: 0 auto;
+    /* border-bottom: 1px solid black; */
+}
+
+#cover_wrap,
+#about_wrap,
+#skill_wrap,
+#portfolio_wrap,
+#contact_wrap {
+    margin: 0 auto;
+}
+
+/* 1.cover */
+#cover_container {
+    /* background-color: khaki; */
+    height: 60vw;
+}
+
+#cover_wrap {
+    width: 80%;
+    max-width: 1300px;
+    font-family: "Rubik Mono One", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: transform 0.5s ease-out;
+    /* background-color: peachpuff; */
+    padding-top: 7vw;
+}
+
+#cover_memo {
+    width: 30%;
+    position: relative;
+    opacity: 0;
+    transform: translate(-50px, -50px);
+    transition: all 1s ease;
+    z-index: 1;
+    /* background-color: red; */
+}
+
+#cover_memo img {
+    width: 100%;
+    /* background-color: red; */
+}
+
+.cover_title2 {
+    font-size: 4.7vw;
+    line-height: 1em;
+    /* background-color: pink; */
+}
+
+.cover_title3 {
+    font-size: 5.65vw;
+    line-height: 1.3em;
+    /* background-color: khaki; */
+}
+
+.cover_title4 {
+    font-size: 7.2vw;
+    line-height: 1em;
+    margin-left: -0.1em;
+    /* background-color: pink; */
+}
+
+.letterspace0 {
+    margin-left: -0.5em;
+    /* background-color: khaki; */
+}
+
+.letterspace1 {
+    margin-left: -0.25em;
+    letter-spacing: -0.15em;
+    /* background-color: khaki; */
+}
+
+.letterspace2 {
+    margin-left: -1em;
+    letter-spacing: -0.15em;
+    /* background-color: pink; */
+}
+
+#cover_title .cover_title1,
+#cover_title .cover_title2,
+#cover_title .cover_title3,
+#cover_wrap .cover_title4 {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+/* 2.about */
+#about_container {
+    height: 65vw;
+    /* background-color: skyblue; */
+}
+
+.about_title {
+    color: black;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#about_wrap {
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: skyblue; */
+    margin-top: 5%;
+}
+
+.about_left_content,
+.about_right_content {
+    width: 50%;
+}
+
+.about_left_content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* background-color: seagreen; */
+}
+
+.me {
+    width: 100%;
+    max-width: 450px;
+    aspect-ratio: 1 / 1;
+    border: 0.5vw solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('../image/myimg.png');
+    background-size: 87%;
+    background-position: 75% -23%;
+    background-repeat: no-repeat;
+    background-color: seagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.me .hover-text {
+    transition: opacity 1s;
+    font-size: 1vw;
+    opacity: 0;
+    background-color: seagreen;
+    color: #fff;
+}
+
+.me:hover .hover-text {
+    opacity: 0.7;
+}
+
+.about_right_content {
+    padding-left: 5%;
+    /* background-color: salmon; */
+}
+
+.about_right_content>h1 {
+    font-size: 3.5vw;
+}
+
+.about_right_content>p {
+    font-size: 1.7vw;
+    line-height: 1.6em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.about_keyword {
+    padding: 0.5em 1.2em;
+    background-color: black;
+    border-radius: 2em;
+    font-weight: 800;
+    line-height: 1.1rem;
+    position: absolute;
+    color: #fff;
+    transform: translateY(0);
+}
+
+.keyword1 {
+    font-size: 2.5vw;
+    top: 0%;
+    left: 60%;
+    animation: aboutKeyword 1.5s infinite;
+
+}
+
+.keyword2 {
+    font-size: 1.6vw;
+    top: 50%;
+    left: -5%;
+    animation: aboutKeyword 2s infinite;
+}
+
+.keyword3 {
+    font-size: 3vw;
+    top: 70%;
+    right: -5%;
+    animation: aboutKeyword 2.5s infinite;
+}
+
+/* 색상 변화 애니메이션 */
+@keyframes aboutKeyword {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(-0px);
+    }
+}
+
+/* 3.skill */
+#skill_container {
+    height: 70vw;
+}
+
+.skill_title {
+    color: black;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+#skill_wrap {
+    width: 90%;
+    height: 75%;
+    max-width: 1400px;
+    perspective: 1000px;
+    /* 3D 효과를 위한 원근감 */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+/* 카드 레이아웃 */
+.card1_wrap {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_right_wrap {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2_wrap,
+.card3_wrap {
+    height: 48%;
+}
+
+.card3_wrap {
+    margin-top: 5%;
+}
+
+/* 카드 */
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s ease;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    padding: 5% 5%;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* card-front 컨텐츠 */
+.filter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    filter: grayscale(1);
+    transition: 1s;
+}
+
+#skill_icon1 img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+/* publishing icon */
+#skill_icon2 img,
+#skill_icon3 img {
+    width: 15%;
+    max-width: 30%;
+    margin-left: 2%;
+    margin-top: -2%;
+}
+
+.card1_wrap:hover .filter {
+    filter: grayscale(0);
+}
+
+.card2_wrap:hover .filter {
+    filter: grayscale(0);
+}
+
+.card3_wrap:hover .filter {
+    filter: grayscale(0);
+}
+
+/* card-back 컨텐츠 */
+.card-back {
+    background-color: #fff;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    transform: rotateY(180deg);
+    /* 뒷면은 180도 회전 */
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+    /* 카드 뒤집기 */
+}
+
+/* card front,back 텍스트 스타일 */
+h2 {
+    font-size: 3vw;
+    font-weight: 800;
+}
+
+.align_center {
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+}
+
+h3 {
+    font-size: 1.5vw;
+    font-weight: 800;
+    margin: 2% 0;
+}
+
+p {
+    font-size: 1.3vw;
+    margin: 2% 0;
+}
+
+
+/* 4.portfolio */
+#portfolio_container {
+    padding-bottom: 0;
+    /* background-color: skyblue; */
+}
+
+.portfolio_title {
+    color: black;
+    text-align: center;
+}
+
+/* Tap style */
+.tab-container {
+    width: 100%;
+    height: 60vw;
+    background-color: black;
+    /* background-color: rgba(0, 0, 0, 1); */
+    /* border: 5px solid mediumseagreen; */
+}
+
+/* Tap button */
+.tab-buttons {
+    display: flex;
+}
+
+.tab-buttons button {
+    flex: 1;
+    padding: 1.5vw 2vw;
+    cursor: pointer;
+    background-color: #dfdfdf;
+    border: none;
+    transition: all 0.3s ease;
+    color: black;
+    font-family: "Rubik Mono One", sans-serif;
+    font-size: 2vw;
+    color: #ccc;
+}
+
+.tab-buttons button.active {
+    color: #fff;
+    background-color: black;
+    font-size: 2.5vw;
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+    height: calc(100vw - 50vw);
+    /* margin-top: 5%; */
+    /* background-color: #333; */
+    /* border: 3px solid yellow; */
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* 4.portfolio - project */
+/* swiper styles */
+.swiper {
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid yellow; */
+}
+
+.swiper-slide {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* border: 5px solid slateblue; */
+}
+
+.swiper-pagination {
+    /* background-color: red; */
+}
+
+/* web - content style */
+.web_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: brown; */
+    /* border: 3px solid yellow; */
+}
+
+.web_preview_wrap,
+.web_text_wrap {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* web content - 사이트 프리뷰 이미지 */
+.web_preview_wrap {
+    position: relative;
+    border-right: 1px solid #333;
+    /* border-radius: 1rem; */
+    /* border: 1px solid red; */
+}
+
+/* 사이트 이미지 wrap */
+.site_img_wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 사이트 이미지 img */
+.site_img1,
+.site_img2,
+.site_img3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease-out;
+    transform: translate(0, 0);
+    /* 기본 상태 */
+}
+
+.web_preview_wrap:hover .site_img1 {
+    transform: translateY(calc(40vw - 100vw));
+}
+
+.web_preview_wrap:hover .site_img2 {
+    transform: translateY(calc(28vw - 100vw));
+}
+
+.web_preview_wrap:hover .site_img3 {
+    transform: translateY(calc(10vw - 140vw));
+}
+
+/* 사이트 이동버튼 배경 */
+.web_btn_wrap {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+
+.web_preview_wrap:hover .web_btn_wrap {
+    opacity: 1;
+}
+
+/* 사이트 이동버튼 */
+.site_btn {
+    font-size: 2vw;
+    padding: 2% 7%;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    /* margin: 0 0.5em; */
+    background-color: seagreen;
+}
+
+.site_btn:hover {
+    font-weight: 800;
+}
+
+/* web content - 사이트 텍스트 스타일 */
+.web_text_wrap {
+    height: 100%;
+    color: #fff;
+    padding: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: rebeccapurple; */
+}
+
+/* 사이트 텍스트 텍스트 개별 스타일 */
+.web_text_wrap h3 {
+    font-size: 4vw;
+    line-height: 1.2em;
+    margin-bottom: 1.5vw;
+    font-weight: 600;
+}
+
+.sub_text_info {
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+    line-height: 1.7em
+}
+
+.sub_text_stack {
+    font-size: 1.2vw;
+    line-height: 1.6em;
+    opacity: 0.5;
+}
+
+
+/* edit - book style */
+.book {
+    width: 60%;
+    aspect-ratio: 1 / 1.4;
+    position: relative;
+    margin-left: 5%;
+    perspective: 1000px;
+    /* 원근감 설정 */
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.bookCover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    /* 왼쪽을 기준으로 회전 */
+    transform: rotateY(0deg);
+    /* 기본 상태 */
+    z-index: 2;
+    font-size: 4vw;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1em;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 책 옆면 (책등) */
+.bookSide {
+    position: absolute;
+    width: 25%;
+    /* 책등 두께 */
+    height: 100%;
+    background-color: #777;
+    left: -25%;
+    /* 책등 위치 */
+    transform-origin: right;
+    /* 오른쪽을 기준으로 회전 */
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(-90deg);
+    /* 기본 상태 */
+    z-index: 1;
+}
+
+/* 호버 효과 */
+.book:hover .bookCover {
+    transform: rotateY(10deg);
+}
+
+.book:hover .bookSide {
+    transform: rotateY(-60deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 5.contact */
+/* #contact_container {
+    background-color: khaki;
+} */
+
+#contact_wrap {
+    width: 90%;
+    max-width: 1400px;
+    height: 40vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    /* background-color: saddlebrown; */
+}
+
+#contact_info_wrap {
+    width: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13%;
+}
+
+.contact_title_h1 {
+    font-family: "Rubik Mono One", sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 7vw;
+    font-weight: bold;
+    /* background-color: skyblue; */
+}
+
+.motion_bounce {
+    display: inline-block;
+    animation: bounce 2s ease-in-out infinite;
+    /* 애니메이션 반복 */
+    transform-origin: bottom;
+    /* 움직임의 기준점 */
+}
+
+/* 각 span의 지연 시간 */
+.motion1 {
+    animation-delay: 0s;
+}
+
+.motion2 {
+    animation-delay: 0.1s;
+}
+
+.motion3 {
+    animation-delay: 0.2s;
+}
+
+.motion4 {
+    animation-delay: 0.3s;
+}
+
+.motion5 {
+    animation-delay: 0.4s;
+}
+
+.motion6 {
+    animation-delay: 0.5s;
+}
+
+.motion7 {
+    animation-delay: 0.6s;
+}
+
+/* 애니메이션 정의 */
+@keyframes bounce {
+
+    0%,
+    20% {
+        transform: translateY(0);
+        /* 시작 위치 */
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* 올라가는 위치 */
+    }
+
+    80%,
+    100% {
+        transform: translateY(0);
+        /* 정지 상태 */
+    }
+}
+
+#contact_info {
+    width: 50%;
+    height: 10vw;
+    margin-top: 0.1em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* background-color: skyblue; */
+}
+
+.visible {
+    opacity: 1;
+}
+
+.contact_name {
+    display: block;
+    margin-right: 5%;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.contact_num {
+    display: block;
+    font-size: 1.8vw;
+    margin-top: -1%;
+    color: #ccc;
+}
+
+#contact_copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4vw;
+    color: #ccc;
+    padding: 3% 0;
+    /* background-color: pink; */
+}
+
+/* 플로우 텍스트 */
+#flow_wrap {
+    width: 110vw;
+    position: absolute;
+    left: -10%;
+    bottom: 10vw;
+}
+
+.contact_flowtext_front,
+.contact_flowtext_back {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.motion_flow_front,
+.motion_flow_back {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    animation: flow-animation 5s linear infinite;
+}
+
+.motion_flow_front p,
+.motion_flow_back p {
+    letter-spacing: 0.2em;
+    margin-top: -0.1%;
+}
+
+/* 첫번째 플로우라인 */
+.contact_flowtext_front {
+    height: 3vw;
+    background-color: #fff;
+    border: 2px solid black;
+    transform: rotate(-3deg);
+}
+
+.motion_flow_front {
+    width: 240vw;
+    height: 2vw;
+    animation: flow-animation1 5s linear infinite;
+}
+
+.motion_flow_front p {
+    width: 20vw;
+    font-size: 2vw;
+    color: black;
+}
+
+/* 두번째 플로우라인 */
+.contact_flowtext_back {
+    height: 2.5vw;
+    background-color: black;
+    transform: rotate(2deg);
+}
+
+.motion_flow_back {
+    width: 1950vw;
+    height: 1.5vw;
+    animation: flow-animation2 15s linear infinite;
+}
+
+.motion_flow_back p {
+    width: 15vw;
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+@keyframes flow-animation1 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -20vw;
+        /* 텍스트 width와 동일 */
+    }
+}
+
+@keyframes flow-animation2 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -15vw;
+        /* 텍스트 width와 동일 */
+    }
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~ end ~~~~~~~~~~~~~~~~~~ */
+
+/* 4.portfolio - 프로젝트 상세보기 모달 */
+.project_modal_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.project_modal_wrap {
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    position: relative;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_modal_info>h1 {
+    font-size: 7vw;
+}
+
+.project_modal_info>p {
+    font-size: 4vw;
+}
+
+.edit_modal_close {
+    width: 3rem;
+    height: 3rem;
+    background-color: seagreen;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+.edit_modal_close:active {
+    transform: scale(0.95); /* 클릭 시 크기 축소 */
+}
+
+/* 상단이동 */
+#top {
+    position: fixed;
+    right: 5vw;
+    bottom: 3vw;
+    border-radius: 50%;
+    width: 6vw;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: bold;
+}

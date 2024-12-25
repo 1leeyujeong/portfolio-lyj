@@ -31,10 +31,10 @@
                 <div id="logo" class="logo">leeyujeong</div>
                 <nav>
                     <ul id="nav_menu">
-                        <li><a href="#about_container" class="hover-effect">About</a></li>
-                        <li><a href="#skill_container" class="hover-effect">Skill</a></li>
-                        <li><a href="#portfolio_container" class="hover-effect">Project</a></li>
-                        <li><a href="#contact_container" class="hover-effect">Contact</a></li>
+                        <li><a href="#about_container" class="nav_hover-effect nav-link">ABOUT</a></li>
+                        <li><a href="#skill_container" class="nav_hover-effect nav-link">SKILL</a></li>
+                        <li><a href="#portfolio_container" class="nav_hover-effect nav-link">PROJECT</a></li>
+                        <li><a href="#contact_container" class="nav_hover-effect nav-link">CONTACT</a></li>
                     </ul>
                 </nav>
             </section>
@@ -43,26 +43,27 @@
         <!-- =============== <main> =============== -->
         <main>
             <!-- ============= 1.cover ============= -->
-            <section id="cover_container">
+            <section id="cover_container" class="section">
                 <div id="cover_wrap">
                     <div id="cover_title">
-                        <div class="cover_title1">WEB</div>
-                        <div class="cover_title2">PUBLISHING</div>
+                        <div class="cover_title2">WEB<span class="letterspace0"> </span>PUBLISHING</div>
                         <div class="cover_title3"><span class="letterspace1">(</span>EDIT <span
                                 class="letterspace2">)</span>DESIGN</div>
+                        <div class="cover_title4">PORTFOLIO</div>
                     </div>
                     <div id="cover_memo">
                         <img src="./image/cover_meno.png" alt="">
                     </div>
-                    <div class="cover_title4">PORTFOLIO</div>
                 </div>
             </section>
             <!-- ============= 2.about ============= -->
-            <section id="about_container">
+            <section id="about_container" class="section">
                 <div id="container_title" class="about_title">ABOUT</div>
                 <div id="about_wrap">
                     <div class="about_left_content">
-                        <div class="me"></div>
+                        <div class="me">
+                            <div class="hover-text">&nbsp;&nbsp;Illust Copyright &copy; LEE SOYEON♥&nbsp;&nbsp;</div>
+                        </div>
                         <span class="about_keyword keyword1">#소통</span>
                         <span class="about_keyword keyword2">#성실한</span>
                         <span class="about_keyword keyword3">#유연한</span>
@@ -71,20 +72,20 @@
                         <h1>생각하고 탐구하는, <br> 웹퍼블리셔&웹디자이너 <br>이유정입니다.</h1>
                         <p>편집디자이너로서 5년간 근무하는 동안, <br>종이와 온라인이라는 매체에서 사용자가 편리하고
                             좋은 경험을 얻을 수 있도록 내용을 다듬고 보기 좋게 만드는 작업을 하였습니다.
-                            서로의 영역을 이해할 줄 알고 활용하여 효율적인 방향으로 나아가는 것을 중요하게 생각하며, 피그마, 팀즈, 지라, 컨플루언스 시스템들을 통한 업무 전달 및 공유 프로세스를 익혔습니다.</p>
+                            서로의 영역을 이해할 줄 알고 활용하여 효율적인 방향으로 나아가는 것을 중요하게 생각하며 새로움을 탐구합니다.</p>
                     </div>
                 </div>
             </section>
             <!-- ============= 3.skill ============= -->
-            <section id="skill_container">
+            <section id="skill_container" class="section">
                 <div id="container_title" class="skill_title">SKILL</div>
                 <div id="skill_wrap">
-                    <div class="card_left_wrap">
+                    <div class="card1_wrap">
                         <!-- 카드1 -->
                         <div class="card" id="card1">
                             <div class="card-front">
                                 <h2>Web publishing</h2>
-                                <div id="skill_icon" class="filter card1_icon">
+                                <div id="skill_icon1" class="filter">
                                     <img src="./image/skill-icon-html.png" alt="icon-html">
                                     <img src="./image/skill-icon-css.png" alt="icon-css">
                                     <img src="./image/skill-icon-js.png" alt="icon-js">
@@ -114,7 +115,7 @@
                             <div class="card" id="card2">
                                 <div class="card-front">
                                     <h2>design</h2>
-                                    <div id="skill_icon" class="filter">
+                                    <div id="skill_icon2" class="filter">
                                         <img src="./image/skill-icon-figma.png" alt="icon-figma">
                                         <img src="./image/skill-icon-ps.png" alt="icon-ps">
                                         <img src="./image/skill-icon-ai.png" alt="icon-ai">
@@ -139,7 +140,7 @@
                             <div class="card" id="card3">
                                 <div class="card-front">
                                     <h2>tool</h2>
-                                    <div id="skill_icon" class="filter">
+                                    <div id="skill_icon3" class="filter">
                                         <img src="./image/skill-icon-github.png" alt="icon-github">
                                         <img src="./image/skill-icon-teams.png" alt="icon-teams">
                                         <img src="./image/skill-icon-conf.png" alt="icon-conf">
@@ -159,236 +160,251 @@
                         </div>
             </section>
             <!-- ============= 4.portfolio ============= -->
-            <section id="portfolio_container">
+            <section id="portfolio_container" class="section">
                 <div id="container_title" class="portfolio_title">PORTFOLIO</div>
-                <div id="portfolio_wrap">
-                    <div id="portfolio_tap_menu">
-                        <ul>
-                            <li class="tap_active">
-                                <a href="#">WEB PUBLISHING</a>
-                                <div class="portfolio_tap_content">
-                                    <div id="drag_icon"></div>
-                                    <!-- Swiper -->
-                                    <div class="swiper mySwiper">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <!-- 프로젝트1 -->
-                                                <div class="web" id="web1">
-                                                    <div id="web_img_wrap">
-                                                        <div id="site_img">
-                                                            <img src="./image/site_preview_1.jpg" alt="site_preview_1"
-                                                                class="site_img1">
-                                                        </div>
-                                                        <div id="web_btn">
-                                                            <a href="https://1leeyujeong.github.io/project-astroseoul/"
-                                                                target="_blank" id="web_btn1">사이트가기</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="web_text_wrap">
-                                                        <div>
-                                                            <h3>시립서울천문대<br>홈페이지 리뉴얼</h3>
-                                                            <p class="sub_text1">
-                                                                메인페이지(index)<br>
-                                                                서브페이지 [프로그램소개], [천문소식]<br>
-                                                                - [프로그램 목록], [프로그램 소개], [프로그램 예약화면]<br>
-                                                                - [천문소식 목록], [천문우주이야기]<br>
-                                                                <br>
-                                                                전체 디자인가이드 제작 및 메인페이지 코딩을 담당했습니다.<br>
-                                                                예약 시스템의 UI를 개선하고 다양한 컨텐츠를 강조했으며.
-                                                                js/jquery로 스크롤이벤트를 주고 css position 값을 이용해 인터렉티브한 화면을
-                                                                기획하였습니다.
-                                                            </p>
-                                                        </div>
-                                                        <p class="sub_text2">인원: 3명 | 작업기간: 3주
-                                                            <br>기여도: 디자인 100%(all pages), 코딩 100%(index)
-                                                            <br>
-                                                            스택:
-                                                            html, css, javascript, jquery
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <!-- 프로젝트1 끝 -->
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <!-- 프로젝트2 -->
-                                                <div class="web" id="web1">
-                                                    <div id="web_img_wrap">
-                                                        <div id="site_img">
-                                                            <img src="./image/site_preview_2.jpg" alt="site_preview_2"
-                                                                class="site_img2">
-                                                        </div>
-                                                        <div id="web_btn">
-                                                            <a href="https://1leeyujeong.github.io/portfolio-ver1/"
-                                                                target="_blank" id="web_btn2">사이트가기</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="web_text_wrap">
-                                                        <div>
-                                                            <h3>웹퍼블리싱&웹디자인<br>개인 포트폴리오 사이트</h3>
-                                                            <p class="sub_text1">개인 포트폴리오 사이트입니다. <br>
-                                                                웹퍼블리싱 작업 및 디자인 작업물들을 확인할 수 있습니다.
-                                                            </p>
-                                                        </div>
-                                                        <p class="sub_text2">기여도: 디자인 100%, 코딩 100% |
-                                                            작업기간: 2주
-                                                            <br>
-                                                            스택:
-                                                            html, css, javascript, jquery, swiper-plugin
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <!-- 프로젝트2 끝 -->
-
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <!-- 프로젝트3-->
-                                                <div class="web" id="web1">
-                                                    <div id="web_img_wrap">
-                                                        <div id="site_img">
-                                                            <img src="./image/site_preview_3.jpg" alt="site_preview_3"
-                                                                class="site_img3">
-                                                        </div>
-                                                        <div id="web_btn">
-                                                            <a href="https://1leeyujeong.github.io/project-eventpage-1/"
-                                                                target="_blank" id="web_btn3">상세보기</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="web_text_wrap">
-                                                        <div>
-                                                            <h3>추석이벤트<br>기획전디자인</h3>
-                                                            <p class="sub_text1">2023년에 디자인한 추석이벤트 기획전 페이지입니다.</p>
-                                                        </div>
-                                                        <p class="sub_text2">기여도: 디자인 100% | 작업기간: 약 2주
-                                                            <br>
-                                                            스택:
-                                                            Photoshop, Illustrator, Figma
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <!-- 프로젝트3 끝 -->
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#">EDIT DESIGN</a>
-                                <div class="portfolio_tap_content">
-                                    <!-- Swiper -->
-                                    <div class="swiper mySwiper2">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="book" id="book1">
-                                                    <div class="bookCover">comming<br>soon</div>
-                                                    <div class="bookSide"></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="book" id="book1">
-                                                    <div class="bookCover">comming<br>soon</div>
-                                                    <div class="bookSide"></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="book" id="book1">
-                                                    <div class="bookCover">comming<br>soon</div>
-                                                    <div class="bookSide"></div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="book" id="book1">
-                                                    <div class="bookCover">comming<br>soon</div>
-                                                    <div class="bookSide"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                <!-- Tap -->
+                <div class="tab-container">
+                    <!-- Tap button -->
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="tab1">WEB PUBLISHING</button>
+                        <button class="tab-btn" data-tab="tab2">EDIT DESIGN</button>
                     </div>
 
-                </div>
+                    <!-- Tap content -->
+                    <!-- web content -->
+                    <div class="tab-content active" id="tab1">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="web_container" id="web1">
+                                        <div class="web_preview_wrap">
+                                            <div class="site_img_wrap">
+                                                <img src="./image/site_preview_1.jpg" alt="site_preview_1"
+                                                    class="site_img1">
+                                            </div>
+                                            <div class="web_btn_wrap">
+                                                <div class="site_btn">
+                                                    <a href="https://1leeyujeong.github.io/project-astroseoul/" target="_blank">사이트가기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="web_text_wrap">
+                                            <div>
+                                                <h3>시립서울천문대<br>홈페이지 리뉴얼</h3>
+                                                <p class="sub_text_info">
+                                                    메인페이지(Index) / 서브페이지<br>
+                                                    [프로그램 소개]: [프로그램 목록], [프로그램 소개], [프로그램 예약]<br>
+                                                    [천문소식]: [천문소식 목록], [천문우주이야기]<br>
+                                                    전체 디자인가이드 제작 및 메인페이지 코딩을 담당했습니다.<br>
+                                                    UI를 개선하고 우주와 관련된 컨텐츠를 중심으로 디자인하고, js/jquery 스크롤이벤트와 css position으로
+                                                    인터렉티브한 우주컨셉을 기획/제작했습니다.
+                                                </p>
+                                            </div>
+                                            <div class="sub_text_stack">인원: 3명 | 작업기간: 3주
+                                                <br>기여도: 디자인 100%(All pages), 코딩 100%(Index)
+                                                <br>
+                                                스택:
+                                                html, css, javascript, jquery
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="web_container" id="web2">
+                                        <div class="web_preview_wrap">
+                                            <div class="site_img_wrap">
+                                                <img src="./image/site_preview_2.jpg" alt="site_preview_2"
+                                                    class="site_img2">
+                                            </div>
+                                            <div class="web_btn_wrap">
+                                                <div class="site_btn">
+                                                    <a href="https://1leeyujeong.github.io/portfolio-lyj/" target="_blank">사이트가기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="web_text_wrap">
+                                            <div>
+                                                <h3>웹퍼블리싱&웹디자인<br>개인 포트폴리오 사이트</h3>
+                                                <p class="sub_text_info">개인 포트폴리오 사이트입니다. <br>
+                                                    웹퍼블리싱 수업을 하면서 배운 내용들을 기반으로 웹사이트 제작을 진행하였으며,
+                                                    사이트 및 북디자인 프로젝트를 확인할 수 있습니다.
+                                                </p>
+                                            </div>
+                                            <div class="sub_text_stack">기여도: 디자인 100%, 코딩 100% |
+                                                작업기간: 2주
+                                                <br>
+                                                스택:
+                                                html, css, javascript, jquery, swiper-plugin
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="web_container" id="web3">
+                                        <div class="web_preview_wrap">
+                                            <div class="site_img_wrap">
+                                                <img src="./image/site_preview_3.jpg" alt="site_preview_3"
+                                                    class="site_img3">
+                                            </div>
+
+                                            <div class="web_btn_wrap">
+                                                <div class="site_btn">
+                                                    <a href="https://1leeyujeong.github.io/project-eventpage-1/" target="_blank">사이트가기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="web_text_wrap">
+                                            <div>
+                                                <h3>추석이벤트<br>기획전디자인</h3>
+                                                <p class="sub_text_info">2023년에 디자인한 추석이벤트 기획전 페이지입니다.</p>
+                                            </div>
+                                            <div class="sub_text_stack">
+                                                기여도: 디자인 100% | 작업기간: 약 2주 <br>
+                                                스택: Photoshop, Illustrator, Figma
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+
+                    <!-- edit content -->
+                    <div class="tab-content" id="tab2">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="book" id="book1">
+                                        <div class="bookCover">comming<br>soon1</div>
+                                        <div class="bookSide"></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="book" id="book2">
+                                        <div class="bookCover">comming<br>soon2</div>
+                                        <div class="bookSide"></div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="book" id="book3">
+                                        <div class="bookCover">comming<br>soon3</div>
+                                        <div class="bookSide"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+
+
             </section>
             <!-- ============= 5.contact ============= -->
-            <section id="contact_container">
+            <section id="contact_container" class="section">
                 <!-- <div id="container_title" class="contact_title">CONTACT</div> -->
                 <div id="contact_wrap">
-                    <h1 id="section_title" class="contact_title_h1">
-                        <span class="motion_bounce motion1">C</span>
-                        <span class="motion_bounce motion2">O</span>
-                        <span class="motion_bounce motion3">N</span>
-                        <span class="motion_bounce motion4">T</span>
-                        <span class="motion_bounce motion5">A</span>
-                        <span class="motion_bounce motion6">C</span>
-                        <span class="motion_bounce motion7">T</span>
-                    </h1>
-                    <div id="contact_info">
-                        <div class="contact_name">이유정</div>
-                        <div class="contact_num">010-3356-1519 <br>
-                            yujeong918@naver.com</div>
+                    <div id="contact_info_wrap">
+                        <h1 id="section_title" class="contact_title_h1">
+                            <span class="motion_bounce motion1">C</span>
+                            <span class="motion_bounce motion2">O</span>
+                            <span class="motion_bounce motion3">N</span>
+                            <span class="motion_bounce motion4">T</span>
+                            <span class="motion_bounce motion5">A</span>
+                            <span class="motion_bounce motion6">C</span>
+                            <span class="motion_bounce motion7">T</span>
+                        </h1>
+                        <div id="contact_info">
+                            <div class="contact_name">이유정</div>
+                            <div class="contact_num">010-3356-1519 <br>
+                                yujeong918@naver.com</div>
+                        </div>
                     </div>
-                </div>
-                <div class="contact_flowtext1">
-                    <div class="motion_flow1">
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
+
+                    <div id="contact_copyright">
+                        portfolio 2025, lee yu jeong
                     </div>
+
+                    <div id="flow_wrap">
+                        <div class="contact_flowtext_back">
+                            <div class="motion_flow_back">
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                            </div>
+                        </div>
+
+                        <div class="contact_flowtext_front">
+                            <div class="motion_flow_front">
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                                <p>THANK YOU</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="contact_flowtext2">
-                    <div class="motion_flow2">
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                        <p>THANK YOU</p>
-                    </div>
-                </div>
-                <div id="contact_copyright">
-                    portfolio 2025, lee yu jeong
-                </div>
             </section>
         </main>
     </div>
 
-    <!-- 프로젝트 상세보기 모달 -->
-    <div id="web_project_modal1" class="project_modal_bg">
-        <div class="project_modal">
-            <div class="scroll">
-                <h1>웹사이트 리뉴얼</h1>
-                <p>제작기획/의도 설명 스크롤로 넣기 </p>
+    <!-- 4.portfolio - 프로젝트 상세보기 모달 -->
+    <div id="edit_project_modal1" class="project_modal_bg">
+        <div class="project_modal_wrap">
+            <div class="project_modal_info">
+                <h1>COMMING SOON 1</h1>
+                <p>준비중입니다😿</p>
             </div>
-            <button id="web_modal_close">닫기</button>
+            <div class="edit_modal_close">&#x2715;</div>
         </div>
     </div>
 
-    <div id="edit_project_modal1" class="project_modal_bg">
-        <div class="project_modal">
-            <div>
-                <h1>COMMING SOON</h1>
-                <p>준비중입니다</p>
+    <div id="edit_project_modal2" class="project_modal_bg">
+        <div class="project_modal_wrap">
+            <div class="project_modal_info">
+                <h1>COMMING SOON 2</h1>
+                <p>준비중입니다😿</p>
             </div>
-            <button id="edit_modal_close">닫기</button>
+            <div class="edit_modal_close">&#x2715;</div>
+        </div>
+    </div>
+
+
+    <div id="edit_project_modal3" class="project_modal_bg">
+        <div class="project_modal_wrap">
+            <div class="project_modal_info">
+                <h1>COMMING SOON 3</h1>
+                <p>준비중입니다😿</p>
+            </div>
+            <div class="edit_modal_close">&#x2715;</div>
         </div>
     </div>
 
@@ -397,26 +413,6 @@
 
     <!-- ~~~~~~~~~~~~~~~~~~ end ~~~~~~~~~~~~~~~~~~ -->
 
-    <script>
-        // 4.포트폴리오 - 탭메뉴 web - Initialize Swiper1
-        var swiper = new Swiper(".mySwiper", {
-            direction: "vertical",
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        // 4.포트폴리오 - 탭메뉴 edit - Initialize Swiper2
-        var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
 </body>
 
 </html>
