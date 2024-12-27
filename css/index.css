@@ -26,7 +26,7 @@ a {
     width: 100vw;
     background-image: url('../image/cover_bg.png');
     background-size: calc(100vw + 40%);
-    background-position: center -4vw;
+    background-position: center -5vw;
     background-repeat: no-repeat;
 }
 
@@ -48,7 +48,7 @@ header {
 
 #header {
     width: 90%;
-    max-width: 1400px;
+    max-width: calc(100vw + 40%);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -105,7 +105,7 @@ nav {
 .nav-link.active {
     color: seagreen;
     font-weight: bold;
-  }
+}
 
 /* 색상 변화 애니메이션 */
 @keyframes colorChange {
@@ -136,13 +136,19 @@ nav {
 .about_title,
 .skill_title,
 .portfolio_title {
-    font-size: 7vw;
+    font-size: 6vw;
     padding-top: 5%;
     /* 스크롤이벤트 속성 */
-    transition: 1s ease-in-out;
+    /* transition: 1s ease-in-out;
     opacity: 0;
-    transform: translateY(-0.5em);
+    transform: translateY(-0.5em); */
 }
+
+/* 스크롤이벤트 속성 */
+/* .visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 #cover_container,
 #about_container,
@@ -165,12 +171,12 @@ nav {
 /* 1.cover */
 #cover_container {
     /* background-color: khaki; */
-    height: 60vw;
+    height: 45vw;
 }
 
 #cover_wrap {
     width: 80%;
-    max-width: 1300px;
+    /* max-width: 1400px; */
     font-family: "Rubik Mono One", sans-serif;
     display: flex;
     justify-content: space-between;
@@ -178,7 +184,7 @@ nav {
     flex-wrap: wrap;
     transition: transform 0.5s ease-out;
     /* background-color: peachpuff; */
-    padding-top: 7vw;
+    padding-top: 6vw;
 }
 
 #cover_memo {
@@ -196,8 +202,13 @@ nav {
     /* background-color: red; */
 }
 
+#cover_title {
+    /* width: 70%; */
+    /* background-color: red; */
+}
+
 .cover_title2 {
-    font-size: 4.7vw;
+    font-size: 4.65vw;
     line-height: 1em;
     /* background-color: pink; */
 }
@@ -254,11 +265,6 @@ nav {
     transition: 1s ease-in-out;
 }
 
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 #about_wrap {
     width: 90%;
     max-width: 1400px;
@@ -312,22 +318,6 @@ nav {
     opacity: 0.7;
 }
 
-.about_right_content {
-    padding-left: 5%;
-    /* background-color: salmon; */
-}
-
-.about_right_content>h1 {
-    font-size: 3.5vw;
-}
-
-.about_right_content>p {
-    font-size: 1.7vw;
-    line-height: 1.6em;
-    font-weight: 500;
-    margin-top: 1em;
-    margin-bottom: 0;
-}
 
 .about_keyword {
     padding: 0.5em 1.2em;
@@ -341,7 +331,7 @@ nav {
 }
 
 .keyword1 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     top: 0%;
     left: 60%;
     animation: aboutKeyword 1.5s infinite;
@@ -349,14 +339,14 @@ nav {
 }
 
 .keyword2 {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
     top: 50%;
     left: -5%;
     animation: aboutKeyword 2s infinite;
 }
 
 .keyword3 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     top: 70%;
     right: -5%;
     animation: aboutKeyword 2.5s infinite;
@@ -376,6 +366,24 @@ nav {
         transform: translateY(-0px);
     }
 }
+
+.about_right_content {
+    padding-left: 5%;
+    /* background-color: salmon; */
+}
+
+.about_right_content>h1 {
+    font-size: 3vw;
+}
+
+.about_right_content>p {
+    font-size: 1.5vw;
+    line-height: 1.6em;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
 
 /* 3.skill */
 #skill_container {
@@ -691,7 +699,7 @@ p {
     font-size: 2vw;
     padding: 2% 7%;
     color: white;
-    border-radius: 2rem;
+    border-radius: 3em;
     cursor: pointer;
     /* margin: 0 0.5em; */
     background-color: seagreen;
@@ -826,7 +834,7 @@ p {
 }
 
 #contact_info_wrap {
-    width: 100;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -838,7 +846,7 @@ p {
     font-family: "Rubik Mono One", sans-serif;
     display: flex;
     align-items: center;
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: bold;
     /* background-color: skyblue; */
 }
@@ -942,7 +950,7 @@ p {
 #flow_wrap {
     width: 110vw;
     position: absolute;
-    left: -10%;
+    left: -20%;
     bottom: 10vw;
 }
 
@@ -1084,8 +1092,10 @@ p {
     display: inline-block;
     transition: transform 0.2s ease;
 }
+
 .edit_modal_close:active {
-    transform: scale(0.95); /* 클릭 시 크기 축소 */
+    transform: scale(0.95);
+    /* 클릭 시 크기 축소 */
 }
 
 /* 상단이동 */

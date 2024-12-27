@@ -68,37 +68,37 @@ $(function () {
 
 
     // 스크롤위치에 따라 스크롤이벤트
-    document.addEventListener("scroll", function () {
-        const scrollPosition = window.scrollY;
-        const target1 = document.querySelector(".about_title");
-        const target2 = document.querySelector(".skill_title");
-        const target3 = document.querySelector(".portfolio_title");
+    // document.addEventListener("scroll", function () {
+    //     const scrollPosition = window.scrollY;
+    //     const target1 = document.querySelector(".about_title");
+    //     const target2 = document.querySelector(".skill_title");
+    //     const target3 = document.querySelector(".portfolio_title");
 
-        if (scrollPosition >= 400) {
-            target1.classList.add("visible");
-        }
+    //     if (scrollPosition >= 400) {
+    //         target1.classList.add("visible");
+    //     }
 
-        else if (scrollPosition >= 100) {
-            target1.classList.remove("visible");
-        }
+    //     else if (scrollPosition >= 100) {
+    //         target1.classList.remove("visible");
+    //     }
 
-        if (scrollPosition >= 1300) {
-            target2.classList.add("visible");
-        }
+    //     if (scrollPosition >= 1300) {
+    //         target2.classList.add("visible");
+    //     }
 
-        else if (scrollPosition >= 1000) {
-            target2.classList.remove("visible");
-        }
+    //     else if (scrollPosition >= 1000) {
+    //         target2.classList.remove("visible");
+    //     }
 
-        if (scrollPosition >= 2300) {
-            target3.classList.add("visible");
-        }
+    //     if (scrollPosition >= 2300) {
+    //         target3.classList.add("visible");
+    //     }
 
-        else if (scrollPosition >= 1000) {
-            target3.classList.remove("visible");
-        }
+    //     else if (scrollPosition >= 1000) {
+    //         target3.classList.remove("visible");
+    //     }
 
-    });
+    // });
 });
 
 // 3.스킬 - 카드 뒤집기
