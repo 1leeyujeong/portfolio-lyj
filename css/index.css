@@ -255,7 +255,8 @@ nav {
 
 /* 2.about */
 #about_container {
-    height: 65vw;
+    /* height: 50vw; */
+    padding-bottom: 10vw;
     /* background-color: skyblue; */
 }
 
@@ -387,7 +388,9 @@ nav {
 
 /* 3.skill */
 #skill_container {
-    height: 70vw;
+    height: 60vw;
+    padding-bottom: 10vw;
+    background-color: rgba(46, 139, 87, 0.1);
 }
 
 .skill_title {
@@ -948,10 +951,12 @@ p {
 
 /* 플로우 텍스트 */
 #flow_wrap {
-    width: 110vw;
+    width: 150vw;
+    height: 10%;
     position: absolute;
     left: -20%;
     bottom: 10vw;
+    /* background-color: red; */
 }
 
 .contact_flowtext_front,
